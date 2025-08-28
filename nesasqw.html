@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HACKED BY NESAS</title>
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+<!-- Font Awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<style>
+:root { --primary-color: #ff0000; --dark-color: #0a0a0a; --light-gray: #e0e0e0; --dark-gray: #1a1a1a; }
+* { margin:0; padding:0; box-sizing:border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'Roboto', sans-serif; background-color: var(--dark-color); color: var(--light-gray); line-height: 1.7; overflow-x: hidden; }
+h1,h2,h3 { font-family: 'Orbitron', sans-serif; color: var(--primary-color); font-weight: 700; }
+a { color: var(--primary-color); text-decoration: none; transition: all 0.3s; }
+a:hover { color: #fff; text-shadow: 0 0 5px var(--primary-color); }
+.container { max-width: 1100px; margin:auto; padding:0 20px; }
+section { padding:100px 0; border-bottom:1px solid #222; }
+
+/* Hero */
+#hero { height:100vh; display:flex; flex-direction:column; justify-content:center; align-items:center; text-align:center; position:relative; }
+#hero::before { content:''; position:absolute; top:0; left:0; width:100%; height:100%; background:url('https://media1.tenor.com/m/Vp2mGfve8pQAAAAd/hacker-hacker-man.gif') no-repeat center center/cover; opacity:0.3; z-index:-1; }
+.hero-content { z-index:1; }
+.hero-content h1 { font-size:clamp(3rem, 10vw, 6rem); text-shadow:0 0 15px var(--primary-color),0 0 25px var(--primary-color); }
+.glitch { position:relative; animation: glitch-animation 2.5s infinite steps(1); }
+.glitch::before, .glitch::after { content:'HACKED BY NESAS'; position:absolute; top:0; left:0; width:100%; height:100%; background:var(--dark-color); overflow:hidden; }
+.glitch::before { left:2px; text-shadow:-2px 0 var(--primary-color); animation: glitch-before 2.5s infinite steps(1); }
+.glitch::after { left:-2px; text-shadow:2px 0 #00ffff; animation: glitch-after 2.5s infinite steps(1); }
+@keyframes glitch-before { 0%,15%,23%,35%,55%,60%,72%,80%,95%,100% {clip-path: inset(0 0 0 0);} 16%{clip-path: inset(10px 0 85px 0);} 24%{clip-path: inset(80px 0 10px 0);} 36%{clip-path: inset(40px 0 45px 0);} 56%{clip-path: inset(90px 0 5px 0);} 61%{clip-path: inset(20px 0 70px 0);} 73%{clip-path: inset(50px 0 30px 0);} 81%{clip-path: inset(75px 0 20px 0);} 96%{clip-path: inset(15px 0 80px 0);} }
+@keyframes glitch-after { 0%,15%,23%,35%,55%,60%,72%,80%,95%,100% {clip-path: inset(0 0 0 0);} 16%{clip-path: inset(85px 0 10px 0);} 24%{clip-path: inset(5px 0 90px 0);} 36%{clip-path: inset(45px 0 40px 0);} 56%{clip-path: inset(10px 0 80px 0);} 61%{clip-path: inset(70px 0 20px 0);} 73%{clip-path: inset(30px 0 50px 0);} 81%{clip-path: inset(20px 0 75px 0);} 96%{clip-path: inset(80px 0 15px 0);} }
+@keyframes glitch-animation { 0%,100%{transform:translate(0);}20%{transform:translate(-5px,5px);}40%{transform:translate(-5px,-5px);}60%{transform:translate(5px,5px);}80%{transform:translate(5px,-5px);} }
+
+/* Typing */
+.typing-effect { font-size:clamp(1.1rem,3vw,1.5rem); margin-top:10px; color: var(--light-gray); border-right:2px solid var(--light-gray); white-space:nowrap; overflow:hidden; width:35ch; animation: typing 3.5s steps(35,end), blink-caret .75s step-end infinite; }
+@keyframes typing { from{width:0} to{width:35ch} }
+@keyframes blink-caret { from,to{border-color:transparent} 50%{border-color:var(--light-gray);} }
+
+/* Social */
+.social-icons { margin-top:30px; }
+.social-icons a { font-size:2.5rem; margin:0 15px; color:var(--light-gray); }
+.social-icons a:hover { color:var(--primary-color); transform:scale(1.2); }
+
+/* Scroll */
+.scroll-prompt { position:absolute; bottom:70px; left:50%; transform:translateX(-50%); font-family:'Orbitron',sans-serif; color: var(--light-gray); font-size:0.9rem; text-align:center; }
+.scroll-prompt i { display:block; margin-top:10px; font-size:1.5rem; animation:bounce 2s infinite; }
+@keyframes bounce { 0%,20%,50%,80%,100%{transform:translateY(0);} 40%{transform:translateY(-15px);} 60%{transform:translateY(-10px);} }
+
+/* Section Titles */
+.section-title { text-align:center; font-size:clamp(2rem,5vw,2.5rem); margin-bottom:60px; position:relative; }
+.section-title::after { content:''; position:absolute; bottom:-15px; left:50%; transform:translateX(-50%); width:80px; height:3px; background:var(--primary-color); box-shadow:0 0 10px var(--primary-color); }
+
+/* Fade */
+.fade-in { opacity:0; transform:translateY(30px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+.fade-in.visible { opacity:1; transform:translateY(0); }
+
+@media(max-width:768px){ section{padding:80px 0;} .section-title{margin-bottom:40px;} }
+@media(max-width:480px){ .social-icons a{font-size:2rem;margin:0 10px;} .scroll-prompt{font-size:0.8rem;} }
+</style>
+</head>
+<body>
+
+<header id="hero">
+    <div class="hero-content">
+        <h1 class="glitch">HACKED BY NESAS</h1>
+        <p class="typing-effect">Sistem ele geçirildi... Tüm veriler izleniyor!</p>
+        <div class="social-icons">
+            <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" title="Telegram"><i class="fab fa-telegram"></i></a>
+        </div>
+    </div>
+    
+</header>
+
+<main>
+<section id="fake-media">
+    <div class="container fade-in">
+        <h2 class="section-title">Bütün LORD HACK TEAM Severlere Selam Olsun :D 
+  </h2>
+        <p style="text-align:center;">Efsaneler Unutulmaz derler :)</p>
+    </div>
+</section>
+</main>
+
+<footer>
+    <div class="container">
+    </div>
+</footer>
+
+<script>
+const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if(entry.isIntersecting){ entry.target.classList.add('visible'); }
+    });
+},{threshold:0.1});
+document.querySelectorAll('.fade-in').forEach(el => observer.observe(el));
+</script>
+
+</body>
+</html>
